@@ -40,6 +40,7 @@ jobs:
           git pull
           rm -rf *
           cp -R /tmp/landscape/* .
+          cp index.html 404.html
           git add .
           git commit -m "Build landscape"
           git push origin build
